@@ -1,0 +1,37 @@
+ Summary of the built model...
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding (Embedding)        (None, 25, 100)           2865800   
+_________________________________________________________________
+lstm (LSTM)                  (None, 64)                42240     
+_________________________________________________________________
+dense (Dense)                (None, 1)                 65        
+=================================================================
+Total params: 2,908,105
+Trainable params: 42,305
+Non-trainable params: 2,865,800
+_________________________________________________________________
+None
+                   Date search_word             User  ...   Sad  Fear  Sentiment
+0   2021-10-11 05:28:47     @amazon          Dil8750  ...  0.25  0.25   Positive
+1   2021-10-11 05:28:40     @amazon     gaurav504851  ...  0.00  0.00   Negative
+2   2021-10-11 05:28:10     @amazon   Heaven37102862  ...  0.00  0.00   Positive
+3   2021-10-11 05:27:43     @amazon   sharma91_manoj  ...  0.25  0.50   Negative
+4   2021-10-11 05:27:14     @amazon        ETNOWlive  ...  0.00  1.00   Positive
+..                  ...         ...              ...  ...   ...   ...        ...
+689 2021-10-10 20:49:38     @amazon  KhanAhmedHasan2  ...  0.50  0.00   Positive
+690 2021-10-10 20:48:06     @amazon     SamKyddActor  ...  0.50  0.50   Positive
+691 2021-10-10 20:47:51     @amazon         BradMase  ...  0.00  0.00   Positive
+692 2021-10-10 20:44:31     @amazon        userquote  ...  0.00  1.00    Neutral
+693 2021-10-10 20:43:30     @amazon       TdyPatriot  ...  0.50  0.00   Negative
+
+[694 rows x 12 columns]
+  search_word  sarcastic  not_sarcastic  sarcastic %  non_sarcastic %
+0     @amazon        126            568         12.6             56.8
+                Angry      Fear     Happy       Sad  Surprise
+search_word                                                  
+@amazon      0.040591  0.264524  0.103991  0.171787  0.232608
+  search_word  Positive  Negative  Neutral  Positive %  Negative %  Neutral %
+0     @amazon       309       176      209        30.9        17.6       20.9
