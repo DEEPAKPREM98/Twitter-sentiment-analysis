@@ -1,0 +1,18 @@
+#navbar{
+    flex-direction: column;
+}
+
+#services{
+    flex-direction: column;
+
+}
+#clients{
+    overflow: hidden;
+}
+#home{
+    height: 250px;
+    
+}
+
+
+
